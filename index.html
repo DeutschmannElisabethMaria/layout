@@ -1,0 +1,78 @@
+ <!DOCTYPE html>
+<html>
+	<head>
+		<title>calculatore</title>
+		<script>
+			function addTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=num1+num2;
+			}
+			function average()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1+num2)/2;
+			}
+			function subTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1-num2);
+			}
+			function mulTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1*num2);
+			}
+			function divTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1/num2);
+			}
+			function expoTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=(num1**num2);
+			}
+			function logTwoNumbers()
+			{var num1=document.getElementById('fnumber').value*1.0;
+			var num2=document.getElementById('snumber').value*1.0;
+			document.getElementById('result').innerHTML=Math.log(num1)/Math.log(num2);
+			}
+		</script>
+	</head>
+	<body>
+	<div style="background:#ab82ff">
+			<h1>Fun with calculating</h1><br>
+		</div>
+		
+			 <form>
+			  <label for="fnumber">First Number:</label>
+			  <input type="text" id="fnumber" name="fnumber"><br><br>
+			  <label for="snumber">Second Number:</label>
+			  <input type="text" id="snumber" name="snumber"><br><br>
+			</form> 
+		<button onclick="addTwoNumbers()">
+		sum of cutie putie
+		</button>
+		<button onclick="average()">
+		average of furry fellow
+		</button>
+		<button onclick="subTwoNumbers()">
+		difference of little rabbit
+		</button>
+		<button onclick="mulTwoNumbers()">
+		product of gorgeous star
+		</button>
+		<button onclick="divTwoNumbers()">
+		ratio of sweet angel
+		</button>
+		<button onclick="expoTwoNumbers()">
+		exponential puppy friend
+		</button>
+		<button onclick="logTwoNumbers()">
+		logerithm of sneeky cat
+		</button>
+		<p id="result">
+		</p>
+	</body>
+</html> 
